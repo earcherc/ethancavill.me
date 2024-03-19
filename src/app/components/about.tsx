@@ -14,7 +14,7 @@ export default function About() {
     <>
       <AboutWave1 />
       <div id="about" className="h-auto bg-gray-100 -mt-10 md:-mt-20 xl:-mt-32">
-        <h2 className="text-center text-5xl font-semibold text-gray-900 mb-20">About Me</h2>
+        <h2 className="text-center text-5xl font-semibold text-slate-800 mb-20">About Me</h2>
 
         <div className="flex flex-col items-center justify-center max-w-screen-lg mx-auto relative mb-10">
           <div className="h-96 w-96 relative mb-10">

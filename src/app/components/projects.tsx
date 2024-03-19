@@ -29,9 +29,9 @@ export default function Projects() {
     <div id="projects" className="flex flex-col mx-auto h-auto max-w-screen-xl">
       <div className="w-4/5 mx-auto">
         <div className="text-center mb-10">
-          <span className="text-4xl md:text-5xl font-bold text-gray-900">Projects</span>
+          <span className="text-4xl font-bold text-slate-800">Projects</span>
         </div>
-        <div className="space-y-32">
+        <div className="space-y-10 lg:space-y-0">
           {[michellesProject, ethansProject].map((project, index) => (
             <ProjectSlide key={index} index={index} {...project} />
           ))}

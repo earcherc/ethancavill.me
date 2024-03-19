@@ -75,7 +75,7 @@ export default function Skillset() {
   return (
     <div id="skillset">
       <div className="mx-auto w-4/5 min-h-[20rem] md:h-[24rem] rounded-t-xl p-10 bg-gray-100 mt-10">
-        <h2 className="font-bold text-4xl text-center mb-8 text-gray-900">Creative Developer</h2>
+        <h2 className="font-bold text-4xl text-center mb-8 text-slate-800">Creative Developer</h2>
         <p className="prose prose-slate mx-auto mb-6">
           I have the creative and technical skills to build products tailored to your business needs. With a strong
           client relationship, we will develop a unique online presence that separates you from the crowd.
