@@ -1,5 +1,5 @@
 import Projects from '@/app/components/projects/projects';
-import Skillset from '@/app/components/services/skillset';
+import Skillset from '@/app/components/skillset/skillset';
 import Landing from '@/app/components/landing/landing';
 import Scrollspy from '@/app/components/scrollspy';
 import About from '@/app/components/about/about';
