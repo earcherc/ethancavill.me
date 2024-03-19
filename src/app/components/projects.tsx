@@ -31,7 +31,7 @@ export default function Projects() {
         <div className="text-center mb-10">
           <span className="text-4xl font-bold text-slate-800">Projects</span>
         </div>
-        <div className="space-y-10 lg:space-y-0">
+        <div className="space-y-10 lg:space-y-20">
           {[michellesProject, ethansProject].map((project, index) => (
             <ProjectSlide key={index} index={index} {...project} />
           ))}
