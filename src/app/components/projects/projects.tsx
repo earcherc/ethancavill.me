@@ -1,10 +1,8 @@
-'use client';
-
 import ProjectSlide, { ProjectSlideProps } from './projectSlide';
 import React from 'react';
 
-import michellesImage from '../../../public/michelles-portfolio.png';
-import ethansImage from '../../../public/my-portfolio.png';
+import michellesImage from '../../../../public/michelles-portfolio.png';
+import ethansImage from '../../../../public/my-portfolio.png';
 
 export default function Projects() {
   const michellesProject: ProjectSlideProps = {

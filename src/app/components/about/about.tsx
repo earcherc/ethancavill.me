@@ -1,12 +1,10 @@
-'use client';
-
 import Image from 'next/image';
 import React from 'react';
 
-import portraitImage from '../../../public/portrait.png';
-import PortraitBlob from './svgs/portaitBlob';
-import AboutWave1 from './svgs/aboutWave1';
-import AboutWave2 from './svgs/aboutWave2';
+import portraitImage from '../../../../public/portrait.png';
+import PortraitBlob from '../svgs/portaitBlob';
+import AboutWave1 from '../svgs/aboutWave1';
+import AboutWave2 from '../svgs/aboutWave2';
 import Tech from './tech';
 
 export default function About() {
