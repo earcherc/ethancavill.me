@@ -13,8 +13,8 @@ export default function About() {
   return (
     <>
       <AboutWave1 />
-      <div id="about" className="h-auto bg-gray-100 -mt-10 md:-mt-20 xl:-mt-32">
-        <h2 className="text-center text-5xl font-semibold text-slate-800 mb-20">About Me</h2>
+      <div id="about" className="h-auto bg-gray-100 -mt-0 md:-mt-20 xl:-mt-32">
+        <h2 className="text-center text-5xl font-semibold text-slate-800 mb-8 md:mb-20">About Me</h2>
 
         <div className="flex flex-col items-center justify-center max-w-screen-lg mx-auto relative mb-10">
           <div className="h-96 w-96 relative mb-10">
@@ -26,7 +26,7 @@ export default function About() {
             </div>
           </div>
 
-          <p className="prose prose-slate">
+          <p className="prose prose-slate mx-6 md:mx-0">
             Hello, I'm Ethan! Passionate about technology, math, philosophy, nutrition, meditation, fitness, and life;
             through these pursuits, it's my goal to help make the world a better place. Currently focused on building
             applications that connect and empower humanity.
