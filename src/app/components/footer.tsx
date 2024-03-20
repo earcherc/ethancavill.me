@@ -9,28 +9,32 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="relative w-full mt-72 flex flex-col items-center justify-end">
-      <FooterBlob className="absolute w-full h-96 -z-10" />
-      <div className="text-gray-600 hover:text-gray-800 mx-auto mb-2 font-medium tracking-wider transition duration-300 ease-in-out hover:scale-110 transform">
-        <a className="" href="mailto: ethancavill@gmail.com">
+    <div className="flex items-center justify-center mt-44 lg:mt-72">
+      <FooterBlob className="absolute h-96 fill-current text-slate-300" />
+
+      <div className="z-10 flex flex-col justify-center items-center">
+        <a
+          href="mailto: ethancavill@gmail.com"
+          className="text-gray-600 font-semibold hover:text-gray-800 mb-8 transition duration-300 ease-in-out hover:scale-110 transform"
+        >
           ethancavill@gmail.com
         </a>
+
+        <div className="flex space-x-5 mb-8">
+          <a href="https://www.linkedin.com/in/ethancavill/" target="_blank" rel="noreferrer noopener">
+            <FontAwesomeIcon size="2x" icon={faLinkedin} className="text-gray-500 hover:text-gray-900" />
+          </a>
+          <a href="https://github.com/earcherc" target="_blank" rel="noreferrer noopener">
+            <FontAwesomeIcon size="2x" icon={faGithub} className=" text-gray-500 hover:text-gray-900" />
+          </a>
+        </div>
+
+        <div className="font-bold text-xs text-white mb-8 ">Ethan Cavill © {currentYear}</div>
+
+        <button onClick={() => scrollToElement('#home')} className="cursor-pointer">
+          <ArrowUpCircleIcon className="h-10 w-10 text-white hover:text-gray-100" />
+        </button>
       </div>
-
-      <div className="flex space-x-5 mb-10">
-        <a href="https://www.linkedin.com/in/ethancavill/" target="_blank" rel="noreferrer noopener">
-          <FontAwesomeIcon size="2x" icon={faLinkedin} className="text-gray-500 hover:text-gray-900" />
-        </a>
-        <a href="https://github.com/earcherc" target="_blank" rel="noreferrer noopener">
-          <FontAwesomeIcon size="2x" icon={faGithub} className=" text-gray-500 hover:text-gray-900" />
-        </a>
-      </div>
-
-      <button onClick={() => scrollToElement('#home')} className="cursor-pointer mb-3">
-        <ArrowUpCircleIcon className="h-14 w-14 text-white hover:text-gray-100" />
-      </button>
-
-      <div className="font-bold text-xs text-white mb-2">Ethan Cavill © {currentYear}</div>
     </div>
   );
 };
