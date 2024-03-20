@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <div className="flex items-center justify-center mt-44 lg:mt-72">
-      <FooterBlob className="absolute h-96 fill-current text-slate-300" />
+      <FooterBlob className="z-[-10] absolute h-96 fill-current text-slate-300" />
 
       <div className="z-10 flex flex-col justify-center items-center">
         <a
