@@ -1,15 +1,8 @@
-interface PostMetadata {
-  slug: string;
-  title: string;
-  description?: string;
-  date?: string;
-}
-
+// types.d.ts
 interface Post {
-  slug: string;
   title: string;
-  description?: string;
-  date?: string;
-  body?: string;
-  published?: boolean;
+  description: string;
+  date: string;
+  body: string;
+  slug?: string;
 }

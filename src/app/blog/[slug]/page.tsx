@@ -1,6 +1,6 @@
 // app/blog/[slug]/page.tsx
-import getPosts, { getPost } from '../../../utils/mdxUtils';
-import { PostBody } from './components/post-body';
+import { getPost } from '../../../utils/mdxUtils';
+import { PostBody } from '../components/post-body';
 
 export default async function PostPage({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);

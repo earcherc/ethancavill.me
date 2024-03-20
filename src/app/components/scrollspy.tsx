@@ -1,6 +1,6 @@
 'use client';
 
-import { scrollToElement } from '../../../utils/scrollTo';
+import { scrollToElement } from '../../utils/scrollTo';
 import { useSpring, animated } from 'react-spring';
 import React, { useEffect } from 'react';
 import Scrollspy from 'react-scrollspy';

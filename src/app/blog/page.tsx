@@ -1,12 +1,14 @@
-import { PostListRSC } from '@components/post-list';
+// src/app/blog/page.tsx
+import PostList from './components/post-list';
+import getPosts from '../../utils/mdxUtils';
 import { Suspense } from 'react';
 
-const Blog = async () => {
+export default async function Blog() {
+  const posts = await getPosts();
+
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <PostList paginate={true} />
+      <PostList posts={posts} />
     </Suspense>
   );
-};
-
-export default Blog;
+}

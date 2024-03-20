@@ -1,7 +1,7 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ArrowUpCircleIcon } from '@heroicons/react/20/solid';
-import { scrollToElement } from '../../../utils/scrollTo';
+import { scrollToElement } from '../../utils/scrollTo';
 import FooterBlob from './svgs/footerBlob';
 import React from 'react';
 
