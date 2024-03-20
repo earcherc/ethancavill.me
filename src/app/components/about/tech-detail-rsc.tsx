@@ -11,7 +11,7 @@ interface TechDetailProps {
 
 export const TechDetailRSC: React.FC<TechDetailProps> = ({ icon, title, items }) => {
   return (
-    <div className="flex flex-col bg-white shadow-lg p-6 w-3/4 md:w-1/3 border rounded-xl">
+    <div className="flex flex-col bg-white shadow-lg p-6 w-full md:w-1/3 border rounded-xl">
       <div className="flex align-center mb-4">
         <FontAwesomeIcon size="2x" className="mr-3" icon={icon} />
         <span className="font-bold text-gray-800 text-2xl">{title}</span>
