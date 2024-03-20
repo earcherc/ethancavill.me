@@ -2,7 +2,7 @@ import { ProjectSlideProps } from './projects';
 import Image from 'next/image';
 import React from 'react';
 
-export default function StaticProjectSlide({
+export default function ProjectSlideRSC({
   imageSrc,
   title,
   description,

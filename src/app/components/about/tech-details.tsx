@@ -3,10 +3,11 @@
 import { faJs, faPython } from '@fortawesome/free-brands-svg-icons';
 import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from 'react-spring';
-import { TechDetail } from './techDetails';
+
+import { TechDetailRSC } from './tech-detail-rsc';
 import React from 'react';
 
-export default function Tech() {
+export default function TechDetails() {
   const [ref, inView] = useInView({
     rootMargin: '-150px 0px',
     triggerOnce: true,
@@ -28,13 +29,13 @@ export default function Tech() {
         Technologies
       </span>
       <div className="flex flex-col md:flex-row w-4/5 mx-auto justify-center items-center md:space-x-10 space-y-2 md:space-y-0">
-        <TechDetail
+        <TechDetailRSC
           icon={faJs}
           title="Frontend"
           items={['React', 'Angular', 'RxJS', 'Redux', 'Tailwind', 'Next', 'Webhooks']}
         />
 
-        <TechDetail
+        <TechDetailRSC
           icon={faPython}
           title="Backend"
           items={['Python', 'Jupyter', 'GraphQL/Rest', 'Docker', 'AWS', 'SQL', 'Fast API']}

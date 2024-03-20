@@ -5,7 +5,7 @@ import portraitImage from '../../../../public/portrait.png';
 import PortraitBlob from '../svgs/portaitBlob';
 import AboutWave1 from '../svgs/aboutWave1';
 import AboutWave2 from '../svgs/aboutWave2';
-import Tech from './tech';
+import TechDetails from './tech-details';
 
 export default function About() {
   return (
@@ -31,7 +31,7 @@ export default function About() {
           </p>
         </div>
 
-        <Tech />
+        <TechDetails />
         <AboutWave2 />
       </div>
     </>

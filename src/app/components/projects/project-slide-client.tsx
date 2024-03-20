@@ -1,12 +1,12 @@
 'use client';
 
 import { useInView } from 'react-intersection-observer';
-import StaticProjectSlide from './staticProjectSlide';
 import { useSpring, animated } from 'react-spring';
+import ProjectSlideRSC from './project-slide-rsc';
 import { ProjectSlideProps } from './projects';
 import React, { Suspense } from 'react';
 
-export default function DynamicProjectSlide(props: ProjectSlideProps) {
+export default function ProjectSlideClient(props: ProjectSlideProps) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     rootMargin: '-100px 0px',
@@ -20,7 +20,7 @@ export default function DynamicProjectSlide(props: ProjectSlideProps) {
 
   return (
     <animated.div ref={ref} style={projectAnimations}>
-      <StaticProjectSlide {...props} />
+      <ProjectSlideRSC {...props} />
     </animated.div>
   );
 }

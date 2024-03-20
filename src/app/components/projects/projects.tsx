@@ -2,7 +2,7 @@ import michellesImage from '../../../../public/michelles-portfolio.png';
 import ethansImage from '../../../../public/my-portfolio.png';
 import { StaticImageData } from 'next/image';
 
-import DynamicProjectSlide from './dynamicProjectSlide';
+import ProjectSlideClient from './project-slide-client';
 import React, { Suspense } from 'react';
 
 export interface ProjectSlideInterface {
@@ -44,7 +44,7 @@ export default function Projects() {
         <span className="text-4xl font-bold text-slate-700 ">Projects</span>
       </div>
       {projects.map((project, index) => (
-        <DynamicProjectSlide key={index} reverse={index % 2 === 0} {...project}></DynamicProjectSlide>
+        <ProjectSlideClient key={index} reverse={index % 2 === 0} {...project}></ProjectSlideClient>
       ))}
     </Suspense>
   );

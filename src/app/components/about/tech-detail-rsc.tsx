@@ -1,5 +1,3 @@
-'use client';
-
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,7 +9,7 @@ interface TechDetailProps {
   items: string[];
 }
 
-export const TechDetail: React.FC<TechDetailProps> = ({ icon, title, items }) => {
+export const TechDetailRSC: React.FC<TechDetailProps> = ({ icon, title, items }) => {
   return (
     <div className="flex flex-col bg-white shadow-lg p-6 w-3/4 md:w-1/3 border rounded-xl">
       <div className="flex align-center mb-4">
