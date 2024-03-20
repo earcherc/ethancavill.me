@@ -6,8 +6,9 @@ import {
   IconDefinition,
 } from '@fortawesome/free-solid-svg-icons';
 
-import SkillsetDetail from './skillsetDetail';
-import React from 'react';
+const SkillsetDetail = React.lazy(() => import('./skillsetDetail'));
+
+import React, { Suspense } from 'react';
 
 export type SkillDetailsType = {
   icon: IconDefinition;
@@ -44,20 +45,22 @@ export default function Skillset() {
   ];
 
   return (
-    <div id="skillset">
-      <div className="mx-auto w-4/5 min-h-[20rem] md:h-[24rem] rounded-t-xl p-10 bg-gray-100 mt-10">
-        <h2 className="font-bold text-4xl text-center mb-8 text-slate-800">Creative Developer</h2>
-        <p className="prose prose-slate mx-auto mb-6">
-          I have the creative and technical skills to build products tailored to your business needs. With a strong
-          client relationship, we will develop a unique online presence that separates you from the crowd.
-        </p>
-      </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div id="skillset">
+        <div className="mx-auto w-4/5 min-h-[20rem] md:h-[24rem] rounded-t-xl p-10 bg-gray-100 mt-10">
+          <h2 className="font-bold text-4xl text-center mb-8 text-slate-800">Creative Developer</h2>
+          <p className="prose prose-slate mx-auto mb-6">
+            I have the creative and technical skills to build products tailored to your business needs. With a strong
+            client relationship, we will develop a unique online presence that separates you from the crowd.
+          </p>
+        </div>
 
-      <div className="w-full flex flex-col md:flex-row flex-wrap items-center md:items-stretch md:justify-center -mt-10 sm:-mt-24 md:-mt-40 max-w-screen-xl mb-20">
-        {skillDetails.map((detail, index) => (
-          <SkillsetDetail key={index} {...detail} />
-        ))}
+        <div className="w-full flex flex-col md:flex-row flex-wrap items-center md:items-stretch md:justify-center -mt-10 sm:-mt-24 md:-mt-40 max-w-screen-xl mb-20">
+          {skillDetails.map((detail, index) => (
+            <SkillsetDetail key={index} {...detail} />
+          ))}
+        </div>
       </div>
-    </div>
+    </Suspense>
   );
 }
