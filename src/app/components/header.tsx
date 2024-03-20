@@ -5,9 +5,18 @@ import HeaderBlob from './svgs/header-blob';
 import Link from 'next/link';
 import React from 'react';
 
-const Header = () => {
+export default function Header() {
   const pathname = usePathname();
-  const isActive = (path: string) => path === pathname;
+
+  const isActive = (path: string) => {
+    // Special handling for root path
+    if (path === '/' && pathname === '/') {
+      return true;
+    } else if (path !== '/' && pathname.startsWith(path)) {
+      return true;
+    }
+    return false;
+  };
 
   return (
     <header id="home" className="m-auto px-20 max-w-screen-xl h-32">
@@ -43,6 +52,4 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}
