@@ -4,11 +4,25 @@ My portfolio and blog is built with [Next.js 14](https://nextjs.org/), utilizing
 
 ## Getting Started
 
-To get the development server running locally:
+Here's a step-by-step guide to getting this blog running on your local machine:
 
-```bash
-npm run dev
-```
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://your-repository-url-here.git
+   ```
+
+2. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the Development Server**:
+
+   ```bash
+   npm run dev
+   ```
 
 Visit [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio/blog.
 
