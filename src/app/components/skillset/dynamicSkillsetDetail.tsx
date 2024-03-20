@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from 'react-spring';
 import { SkillDetailsType } from './skillset';
 
-export default function SkillsetDetail(props: SkillDetailsType) {
+export default function DynamicSkillsetDetail(props: SkillDetailsType) {
   const [ref, inView] = useInView({
     rootMargin: '-200px 0px',
     triggerOnce: true,
