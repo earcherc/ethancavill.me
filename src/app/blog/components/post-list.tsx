@@ -2,8 +2,6 @@
 import React from 'react';
 
 export default function PostList({ posts }: { posts: Post[] }) {
-  console.log(posts);
-
   return (
     <ul className="divide-y divide-gray-200">
       {posts.map((post) => {
@@ -12,8 +10,6 @@ export default function PostList({ posts }: { posts: Post[] }) {
           day: 'numeric',
           year: 'numeric',
         });
-
-        console.log(post);
 
         return (
           <li key={post.slug} className="py-8">

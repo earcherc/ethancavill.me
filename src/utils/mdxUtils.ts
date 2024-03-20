@@ -17,8 +17,6 @@ export const getPosts = unstable_cache(async (): Promise<Post[]> => {
         const postContent = await fs.readFile(filePath, 'utf8');
         const { data, content } = matter(postContent);
 
-        console.log(data);
-
         return { ...data, body: content } as Post;
       }),
   ).then((posts) => posts.filter((post): post is Post => post !== null));
