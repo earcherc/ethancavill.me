@@ -12,7 +12,7 @@ export default function PostList({ posts }: { posts: Post[] }) {
         });
 
         return (
-          <li key={post.slug} className="py-8">
+          <li key={post.slug} className="p-6">
             <a href={`/blog/${post.slug}`} className="hover:underline">
               <h3 className="text-xl font-semibold text-gray-900">{post.title}</h3>
               <time dateTime={post.date} className="block text-sm font-normal leading-none text-gray-500">
