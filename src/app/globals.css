@@ -6,3 +6,9 @@ html {
   background-color: #ffffff;
   overflow-x: hidden;
 }
+
+.footer-shape {
+  height: 200px;
+  background: #cbd5e0;
+  clip-path: ellipse(75% 100% at 50% 100%);
+}
