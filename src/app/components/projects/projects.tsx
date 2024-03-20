@@ -40,7 +40,7 @@ const projects: ProjectSlideInterface[] = [
 export default function Projects() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <div className="text-center mb-10 md:mb-16">
+      <div id="projects" className="text-center mb-10 md:mb-16">
         <span className="text-4xl font-bold text-slate-700 ">Projects</span>
       </div>
       {projects.map((project, index) => (

@@ -14,11 +14,7 @@ export default function Socials() {
   const iconsAnimation = useSpring({
     opacity: inView ? 1 : 0,
     transform: inView ? 'translate3d(0,0,0)' : 'translate3d(0,20px,0)',
-    config: {
-      friction: 200,
-      tension: 2000,
-      mass: 20,
-    },
+    config: { friction: 26, tension: 170, mass: 1 },
   });
 
   return (

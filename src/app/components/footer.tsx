@@ -9,7 +9,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div id="footer" className="relative w-full mt-72 flex flex-col items-center justify-end">
+    <div className="relative w-full mt-72 flex flex-col items-center justify-end">
       <FooterBlob className="absolute w-full h-96 -z-10" />
       <div className="text-gray-600 hover:text-gray-800 mx-auto mb-2 font-medium tracking-wider transition duration-300 ease-in-out hover:scale-110 transform">
         <a className="" href="mailto: ethancavill@gmail.com">
