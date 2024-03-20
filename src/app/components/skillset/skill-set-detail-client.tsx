@@ -1,11 +1,11 @@
 'use client';
 
-import StaticSkillsetDetail from './staticSkillsetDetail';
 import { useInView } from 'react-intersection-observer';
+import SkillsetDetailRSC from './skill-set-detail-rsc';
 import { useSpring, animated } from 'react-spring';
 import { SkillDetailsType } from './skillset';
 
-export default function DynamicSkillsetDetail(props: SkillDetailsType) {
+export default function SkillsetDetailClient(props: SkillDetailsType) {
   const [ref, inView] = useInView({
     rootMargin: '-200px 0px',
     triggerOnce: true,
@@ -19,7 +19,7 @@ export default function DynamicSkillsetDetail(props: SkillDetailsType) {
 
   return (
     <animated.div ref={ref} style={skillsetAnimation} className="w-3/4 md:w-2/5">
-      <StaticSkillsetDetail {...props} />
+      <SkillsetDetailRSC {...props} />
     </animated.div>
   );
 }

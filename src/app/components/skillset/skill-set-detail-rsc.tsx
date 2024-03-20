@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SkillDetailsType } from './skillset';
 
-export default function StaticSkillsetDetail({ icon, title, description }: SkillDetailsType) {
+export default function SkillsetDetailRSC({ icon, title, description }: SkillDetailsType) {
   return (
     <div className="bg-white p-6 rounded border-t-4 shadow m-2">
       <div className="flex font-bold align-middle mb-2 text-gray-900">

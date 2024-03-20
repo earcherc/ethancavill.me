@@ -6,7 +6,7 @@ import {
   IconDefinition,
 } from '@fortawesome/free-solid-svg-icons';
 
-const DynamicSkillsetDetail = React.lazy(() => import('./dynamicSkillsetDetail'));
+const SkillsetDetailClient = React.lazy(() => import('./skill-set-detail-client'));
 
 import React, { Suspense } from 'react';
 
@@ -57,7 +57,7 @@ export default function Skillset() {
 
         <div className="w-full flex flex-col md:flex-row flex-wrap items-center mx-auto md:items-stretch md:justify-center -mt-10 sm:-mt-24 md:-mt-40 max-w-screen-xl mb-20">
           {skillDetails.map((detail, index) => (
-            <DynamicSkillsetDetail key={index} {...detail} />
+            <SkillsetDetailClient key={index} {...detail} />
           ))}
         </div>
       </div>
