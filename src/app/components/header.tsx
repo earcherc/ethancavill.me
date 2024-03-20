@@ -29,24 +29,22 @@ export default function Header() {
       <div className="mt-auto h-full flex space-x-6 items-center justify-center md:justify-start text-md">
         <div className="items-center self-center space-x-5 flex font-medium z-30">
           <Link
+            className={`px-4 py-2 rounded-full font-medium transition-all duration-150 ease-in-out ${
+              isActive('/') ? 'bg-blue-400 text-white shadow-md' : 'hover:bg-gray-100 hover:scale-105 text-gray-900'
+            }`}
             href="/"
-            className={
-              isActive('/')
-                ? 'border-b-4 border-blue-400'
-                : 'border-transparent border-b-2 hover:border-blue-400 transform duration-150 hover:scale-110 text-gray-900'
-            }
+            passHref
           >
-            home
+            Home
           </Link>
           <Link
+            className={`px-4 py-2 rounded-full font-medium transition-all duration-150 ease-in-out ${
+              isActive('/blog') ? 'bg-blue-400 text-white shadow-md' : 'hover:bg-gray-100 hover:scale-105 text-gray-900'
+            }`}
             href="/blog"
-            className={
-              isActive('/blog')
-                ? 'border-b-4 border-blue-400'
-                : 'border-transparent border-b-2 hover:border-blue-400 transform duration-150 hover:scale-110 text-gray-900 '
-            }
+            passHref
           >
-            blog
+            Blog
           </Link>
         </div>
       </div>
