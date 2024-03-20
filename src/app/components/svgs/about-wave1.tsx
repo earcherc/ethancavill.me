@@ -1,5 +1,5 @@
 const AboutWave1 = () => (
-  <svg className="block bg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+  <svg className="block bg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 319">
     <path
       fill="#F3F4F6"
       fillOpacity="1"
