@@ -55,7 +55,7 @@ export default function Skillset() {
           </p>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row flex-wrap items-center md:items-stretch md:justify-center -mt-10 sm:-mt-24 md:-mt-40 max-w-screen-xl mb-20">
+        <div className="w-full flex flex-col md:flex-row flex-wrap items-center mx-auto md:items-stretch md:justify-center -mt-10 sm:-mt-24 md:-mt-40 max-w-screen-xl mb-20">
           {skillDetails.map((detail, index) => (
             <DynamicSkillsetDetail key={index} {...detail} />
           ))}
