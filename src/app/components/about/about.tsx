@@ -2,9 +2,9 @@ import Image from 'next/image';
 import React from 'react';
 
 import portraitImage from '../../../../public/portrait.png';
-import PortraitBlob from '../svgs/portaitBlob';
-import AboutWave1 from '../svgs/aboutWave1';
-import AboutWave2 from '../svgs/aboutWave2';
+import PortraitBlob from '../svgs/portait-blob';
+import AboutWave1 from '../svgs/about-wave1';
+import AboutWave2 from '../svgs/about-wave2';
 import TechDetails from './tech-details';
 
 export default function About() {

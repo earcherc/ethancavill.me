@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import HeaderBlob from './svgs/headerBlob';
+import HeaderBlob from './svgs/header-blob';
 import Link from 'next/link';
 import React from 'react';
 
