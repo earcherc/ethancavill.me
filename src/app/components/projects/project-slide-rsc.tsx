@@ -12,10 +12,10 @@ export default function ProjectSlideRSC({
 }: ProjectSlideProps) {
   return (
     <div
-      className={`mb-10 lg:mb-20 w-5/6 lg:w-3/4 mx-auto flex flex-col lg:flex-row h-auto justify-center items-center ${reverse ? 'lg:flex-row-reverse' : ''}`}
+      className={`mb-10 lg:mb-20 w-5/6 lg:w-3/4 mx-auto flex flex-col lg:flex-row h-auto justify-center items-center max-w-screen-xl  ${reverse ? 'lg:flex-row-reverse' : ''}`}
     >
       <div className={`z-[-10] w-full lg:w-2/3 ${reverse ? 'lg:-mr-14' : 'lg:-ml-14'}`}>
-        <Image src={imageSrc} alt={title} width={700} height={475} className="rounded shadow" />
+        <Image src={imageSrc} alt={title} className="rounded shadow" />
       </div>
       <div
         className={`w-full lg:w-2/5 bg-white shadow-2xl rounded p-5 flex flex-col justify-between ${reverse ? 'lg:-mr-14' : 'lg:-ml-14'} -mt-14 lg:-mt-0`}

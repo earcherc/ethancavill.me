@@ -8,7 +8,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="footer-shape bg-gray-300">
+    <div className="z-[-10] footer-shape bg-gray-300">
       <div className="pt-5 flex flex-col justify-center items-center">
         <a
           href="mailto: ethancavill@gmail.com"

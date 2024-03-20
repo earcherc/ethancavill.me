@@ -37,7 +37,7 @@ export default function ScrollSpyMenu() {
   });
 
   return (
-    <animated.div style={menuAnimation} className="fixed right-0 top-1/2 hidden lg:flex flex-col items-center">
+    <animated.div style={menuAnimation} className="fixed right-0 top-1/2 hidden md:flex z-30 flex-col items-center">
       <div className="p-1 fixed mr-20 rotate-90 transform space-x-3 bg-white border-t border-gray-100 rounded-full shadow-lg hidden md:flex">
         {sections.map((item, index) => (
           <button

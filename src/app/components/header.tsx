@@ -30,7 +30,7 @@ export default function Header() {
         <div className="items-center self-center space-x-5 flex font-medium z-30">
           <Link
             className={`px-4 py-2 rounded-full font-medium transition-all duration-150 ease-in-out ${
-              isActive('/') ? 'bg-blue-400 text-white shadow-md' : 'hover:bg-gray-100 hover:scale-105 text-gray-900'
+              isActive('/') ? 'bg-blue-300 text-white shadow-md' : 'hover:bg-gray-100 hover:scale-105 text-gray-900'
             }`}
             href="/"
             passHref
@@ -39,7 +39,7 @@ export default function Header() {
           </Link>
           <Link
             className={`px-4 py-2 rounded-full font-medium transition-all duration-150 ease-in-out ${
-              isActive('/blog') ? 'bg-blue-400 text-white shadow-md' : 'hover:bg-gray-100 hover:scale-105 text-gray-900'
+              isActive('/blog') ? 'bg-blue-300 text-white shadow-md' : 'hover:bg-gray-100 hover:scale-105 text-gray-900'
             }`}
             href="/blog"
             passHref
