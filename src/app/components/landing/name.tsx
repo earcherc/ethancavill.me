@@ -1,11 +1,16 @@
 'use client';
 
+import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from 'react-spring';
 
 export default function Name() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
   const nameAnimation = useSpring({
-    from: { transform: 'translate3d(0,-80px,0)', opacity: 0 },
-    to: { transform: 'translate3d(0,-20px,0)', opacity: 1 },
+    opacity: inView ? 1 : 0,
+    transform: inView ? 'translate3d(0,-20px,0)' : 'translate3d(0,-80px,0)',
     config: {
       friction: 200,
       tension: 2000,
@@ -14,7 +19,7 @@ export default function Name() {
   });
 
   return (
-    <animated.div style={nameAnimation} className="flex flex-col">
+    <animated.div ref={ref} style={nameAnimation} className="flex flex-col">
       <span className="text-8xl text-slate-800 font-medium">Ethan Cavill</span>
       <span className="text-3xl font-semilight mt-2 text-gray-700">
         <span className="font-light text-gray-500">{'{'}</span>

@@ -3,12 +3,17 @@
 import { faGithub, faLinkedin, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from 'react-spring';
 
 export default function Socials() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
   const iconsAnimation = useSpring({
-    from: { transform: 'translate3d(0,20px,0)', opacity: 0 },
-    to: { transform: 'translate3d(0,0,0)', opacity: 1 },
+    opacity: inView ? 1 : 0,
+    transform: inView ? 'translate3d(0,0,0)' : 'translate3d(0,20px,0)',
     config: {
       friction: 200,
       tension: 2000,
@@ -17,7 +22,7 @@ export default function Socials() {
   });
 
   return (
-    <animated.div style={iconsAnimation} className="flex justify-center">
+    <animated.div ref={ref} style={iconsAnimation} className="flex justify-center">
       <ul className="flex space-x-12">
         <a
           className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600"

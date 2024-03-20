@@ -24,12 +24,13 @@ export default function ProjectSlide({
 }: ProjectSlideProps & { index: number }) {
   const reverse = index % 2 !== 0;
   const [ref, inView] = useInView({
+    rootMargin: '-200px 0px',
     triggerOnce: true,
   });
 
-  const spring = useSpring({
+  const projectAnimations = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? 'translate3d(0,0,0)' : 'translate3d(0,-50px,0)',
+    transform: inView ? 'translate3d(0,0,0)' : reverse ? 'translate3d(150px,0,0)' : 'translate3d(-150px,0,0)',
     config: {
       friction: 200,
       tension: 2000,
@@ -39,7 +40,7 @@ export default function ProjectSlide({
 
   return (
     <animated.div
-      style={spring}
+      style={projectAnimations}
       ref={ref}
       className={`flex flex-col lg:flex-row h-auto justify-center items-center ${reverse ? 'lg:flex-row-reverse' : ''}`}
     >

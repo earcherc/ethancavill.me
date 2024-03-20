@@ -8,13 +8,11 @@ import React from 'react';
 
 export default function Tech() {
   const [ref, inView] = useInView({
-    root: null,
-    rootMargin: '-200px 0px',
-    threshold: 0,
+    rootMargin: '-150px 0px',
     triggerOnce: true,
   });
 
-  const animationProps = useSpring({
+  const techAnimations = useSpring({
     opacity: inView ? 1 : 0,
     transform: inView ? 'translate3d(0,0,0)' : 'translate3d(0,-100px,0)',
     config: {
@@ -25,7 +23,7 @@ export default function Tech() {
   });
 
   return (
-    <animated.div style={animationProps} ref={ref} className="relative w-full mx-auto max-w-screen-xl">
+    <animated.div style={techAnimations} ref={ref} className="relative w-full mx-auto max-w-screen-xl">
       <span className="hidden md:flex transform -rotate-90 text-3xl font-bold absolute left-0 top-1/2 -translate-y-1/2 md:ml-10 lg:ml-20">
         Technologies
       </span>
