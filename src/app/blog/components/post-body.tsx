@@ -19,7 +19,7 @@ export function PostBody({ source }: { source: string | undefined }) {
       source={source}
       options={{
         mdxOptions: {
-          remarkPlugins: [remarkGfm, [remarkToc, { heading: 'Table of Contents', maxDepth: 2 }]],
+          remarkPlugins: [remarkGfm, [remarkToc, { tight: true, maxDepth: 5 }]],
           rehypePlugins: [
             rehypeSlug,
             [
