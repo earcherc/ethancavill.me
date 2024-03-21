@@ -1,12 +1,12 @@
 // src/utils/mdxUtils.ts
-import { unstable_cache } from 'next/cache';
 import matter from 'gray-matter';
+import { cache } from 'react';
 import fs from 'fs/promises';
 import path from 'path';
 
 const POSTS_FOLDER = path.join(process.cwd(), 'src/app/blog/posts');
 
-export const getPosts = unstable_cache(async (): Promise<Post[]> => {
+export const getPosts = cache(async (): Promise<Post[]> => {
   const posts = await fs.readdir(POSTS_FOLDER);
 
   return Promise.all(

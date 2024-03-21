@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function PostList({ posts }: { posts: Post[] }) {
   return (
-    <ul className="divide-y divide-gray-200">
+    <ul className="space-y-4">
       {posts.map((post) => {
         const date = new Date(post.date).toLocaleDateString('en-US', {
           month: 'long',
@@ -12,8 +12,8 @@ export default function PostList({ posts }: { posts: Post[] }) {
         });
 
         return (
-          <li key={post.slug} className="p-6">
-            <a href={`/blog/${post.slug}`} className="hover:underline">
+          <li key={post.slug} className="p-6 hover:bg-slate-100 rounded-lg">
+            <a href={`/blog/${post.slug}`}>
               <h3 className="text-xl font-semibold text-gray-900">{post.title}</h3>
               <time dateTime={post.date} className="block text-sm font-normal leading-none text-gray-500">
                 {date}
