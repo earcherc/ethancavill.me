@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import portraitImage from '../../../../public/portrait.png';
+import portraitImage from '../../../../public/home/portrait.png';
 import PortraitBlob from '../svgs/portait-blob';
 import AboutWave1 from '../svgs/about-wave1';
 import AboutWave2 from '../svgs/about-wave2';

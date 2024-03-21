@@ -19,14 +19,25 @@ export function PostBody({ source }: { source: string | undefined }) {
       source={source}
       options={{
         mdxOptions: {
-          remarkPlugins: [
-            // Adds support for GitHub Flavored Markdown
-            remarkGfm,
-            // generates a table of contents based on headings
-            remarkToc,
+          remarkPlugins: [remarkGfm, [remarkToc, { heading: 'Table of Contents', maxDepth: 2 }]],
+          rehypePlugins: [
+            rehypeSlug,
+            [
+              rehypeAutolinkHeadings,
+              {
+                behavior: 'append',
+                properties: {},
+                content: {
+                  type: 'element',
+                  tagName: 'span',
+                  properties: {
+                    className: ['anchor-link-icon', 'opacity-0', 'group-hover:opacity-100', 'ml-1'],
+                  },
+                  children: [{ type: 'text', value: '#' }],
+                },
+              },
+            ],
           ],
-          // These work together to add IDs and linkify headings
-          rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
         },
       }}
       components={components}

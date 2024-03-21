@@ -1,5 +1,5 @@
-import michellesImage from '../../../../public/michelles-portfolio.png';
-import ethansImage from '../../../../public/my-portfolio.png';
+import michellesImage from '../../../../public/home/michelles-portfolio.png';
+import ethansImage from '../../../../public/home/my-portfolio.png';
 import { StaticImageData } from 'next/image';
 
 import ProjectSlideClient from './project-slide-client';
