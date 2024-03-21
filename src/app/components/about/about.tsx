@@ -17,7 +17,7 @@ export default function About() {
         <div className="flex flex-col items-center justify-center max-w-screen-lg mx-auto relative mb-10">
           <div className="relative mb-10 h-60 w-60 md:w-72 md:h-72 ">
             <div className="absolute inset-0">
-              <PortraitBlob className="w-full h-full text-blue-300 fill-current animate-[spin_6s_linear_infinite]" />
+              <PortraitBlob className="w-full h-full text-blue-300 fill-current animate-[spin_10s_ease-in-out_infinite]" />
             </div>
             <div className="flex justify-center items-center h-full">
               <Image src={portraitImage} alt="Portrait" className="z-10 w-48 h-48 md:w-56 md:h-56 rounded-full" />
