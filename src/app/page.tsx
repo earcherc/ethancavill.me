@@ -3,6 +3,12 @@ import Skillset from '@/app/components/skillset/skillset';
 import Landing from '@/app/components/landing/landing';
 import Scrollspy from '@/app/components/scrollspy';
 import About from '@/app/components/about/about';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ethan',
+  description: 'AI Developer and Owner',
+};
 
 export default function Home() {
   return (
