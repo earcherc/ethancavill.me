@@ -22,7 +22,7 @@ export default function Header() {
     <header id="home" className="m-auto px-20 max-w-screen-xl h-32">
       <HeaderBlob
         className={
-          'h-[70rem] w-[70rem] hidden md:flex md:absolute animate-[spin_20s_ease-in-out_infinite] -mt-[56rem] -ml-[32rem]'
+          'h-[74rem] w-[74rem] hidden md:flex md:absolute animate-[spin_22s_ease-in-out_infinite] -mt-[60rem] -ml-[36rem]'
         }
       />
 

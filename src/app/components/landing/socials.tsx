@@ -1,6 +1,6 @@
 'use client';
 
-import { faGithub, faLinkedin, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faDiscord, faTwitter, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useInView } from 'react-intersection-observer';
@@ -51,6 +51,22 @@ export default function Socials() {
           href="https://discord.gg/6g5yvj9X5b"
         >
           <FontAwesomeIcon size="2x" icon={faDiscord} />
+        </a>
+        <a
+          className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://twitter.com/ethcavill"
+        >
+          <FontAwesomeIcon size="2x" icon={faTwitter} />
+        </a>
+        <a
+          className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://instagram.com/ethancavill"
+        >
+          <FontAwesomeIcon size="2x" icon={faInstagramSquare} />
         </a>
       </ul>
     </animated.div>
