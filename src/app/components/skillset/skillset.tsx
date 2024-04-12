@@ -1,10 +1,4 @@
-import {
-  faDraftingCompass,
-  faCode,
-  faDollyFlatbed,
-  faHandshake,
-  IconDefinition,
-} from '@fortawesome/free-solid-svg-icons';
+import { faDraftingCompass, faCode, faHandshake, IconDefinition, faMicrochip } from '@fortawesome/free-solid-svg-icons';
 
 const SkillsetDetailClient = React.lazy(() => import('./skill-set-detail-client'));
 
@@ -22,25 +16,25 @@ export default function Skillset() {
       icon: faDraftingCompass,
       title: 'Design',
       description:
-        'With visual art and design experience, I specialize in building websites that express passion and personality. Your website will be trendy for years to come.',
+        'With an education in visual arts, writing, marketing and branding, I’m able to produce a harmonious balance between all dimensions of your business’ image.',
     },
     {
       icon: faCode,
       title: 'Development',
       description:
-        'Possessing skills in both back and front-end development, I build your website using the most current technologies for a responsive and performant experience.',
+        'Working in the medical AI industry taught me how to oragnise complex systems and appreciate the demands of staff and clientele alike. Building with industry leading standards and up-to-date technology is what I specialise in.',
     },
     {
-      icon: faDollyFlatbed,
-      title: 'CMS',
+      icon: faMicrochip,
+      title: 'Technology',
       description:
-        'Specializing with modern content management systems for flexibility and minimal overhead, whether hosting a blog or listing products, there’s a solution for you.',
+        'No matter what dream you have, I will do the research necessary to make it come to life using the most advanced technologies available. The tech industry moves at lightning speed and it’s important to keep your competitive edge.',
     },
     {
       icon: faHandshake,
       title: 'Relationships',
       description:
-        'Working closely with my clients is vital in delivering satisfaction. Through open and frequent communication, your dream project will come to fruition.',
+        'I believe communication and honesty are the hallmarks of a good relationship. I’m available to chat no matter the time or circumstance. All of our work is shared in real time so you have space to provide ideas and feedback.',
     },
   ];
 
@@ -50,14 +44,16 @@ export default function Skillset() {
         <div className="mx-auto w-4/5 min-h-[20rem] md:h-[24rem] rounded-t-xl p-10 bg-gray-100 mt-10">
           <h2 className="font-bold text-4xl text-center mb-8 text-slate-800">Creative Developer</h2>
           <p className="prose prose-slate mx-auto mb-6">
-            I have the creative and technical skills to build products tailored to your business needs. With a strong
-            client relationship, we will develop a unique online presence that separates you from the crowd.
+            A marriage between design and technology is what the modern consumer demands of our digital experiences. One
+            without the other isn’t enough to produce a memorable experience.
           </p>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row flex-wrap items-center mx-auto md:items-stretch md:justify-center -mt-10 sm:-mt-24 md:-mt-40 max-w-screen-xl mb-20">
+        <div className="flex flex-wrap justify-center items-stretch mx-auto -mt-10 sm:-mt-24 md:-mt-40 max-w-screen-xl mb-20">
           {skillDetails.map((detail, index) => (
-            <SkillsetDetailClient key={index} {...detail} />
+            <div className="w-4/5 md:w-2/5 m-2">
+              <SkillsetDetailClient key={index} {...detail} />
+            </div>
           ))}
         </div>
       </div>
