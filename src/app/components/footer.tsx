@@ -8,8 +8,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="z-[-10] footer-shape bg-gray-300">
-      <div className="pt-5 flex flex-col justify-center items-center">
+    <div className="flex items-center mx-auto justify-center z-[-10] footer-shape bg-gray-300">
+      <div className="flex flex-col justify-center items-center">
         <a
           href="mailto: ethancavill@gmail.com"
           className="text-gray-600 font-semibold hover:text-gray-800 mb-4 transition duration-300 ease-in-out hover:scale-110 transform"

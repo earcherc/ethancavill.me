@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Ethan',
-  description: 'AI Developer and Owner',
+  description: 'Developer and Agency Owner',
 };
 
 export default function Home() {
