@@ -31,8 +31,8 @@ export default function About() {
             </p>
             <p className="mb-2">
               To learn is to uncover the unknown. I’ve committed myself to a pursuit of wisdom; questioning everything
-              and trusting no one. It’s only through this process that we begin to individuate and uncover the divine
-              connection of nature.
+              and trusting no one. It’s only through this process that we begin to experience the divine connections in
+              nature.
             </p>
             <p className="mb-2">
               Through my research, I’ve developed a strong appreciation for this relationship between aesthetics and
@@ -40,8 +40,8 @@ export default function About() {
               others.
             </p>
             <p>
-              I believe it necessary to understand these systems in their entirety. Without high level appreciation,
-              it’s impossible to produce a harmonised system. This applies to biological and digital systems alike.
+              I believe it necessary to understand these systems. Without high level appreciation, it’s impossible to
+              produce a harmonised product. This applies to biological and digital systems alike.
             </p>
           </div>
         </div>
