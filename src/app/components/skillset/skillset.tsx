@@ -44,8 +44,8 @@ export default function Skillset() {
         <div className="mx-auto w-4/5 min-h-[20rem] md:h-[24rem] rounded-t-xl p-10 bg-gray-100 mt-10">
           <h2 className="font-bold text-4xl text-center mb-8 text-slate-800">Creative Developer</h2>
           <p className="prose prose-slate mx-auto mb-6">
-            A marriage between design and technology is what the modern consumer demands of our digital experiences. One
-            without the other isn’t enough to produce a memorable experience.
+            A marriage between design and technology is what the modern consumer demands from our digital experiences.
+            One without the other isn’t enough to produce a memorable experience.
           </p>
         </div>
 
