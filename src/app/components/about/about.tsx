@@ -24,11 +24,26 @@ export default function About() {
             </div>
           </div>
 
-          <p className="prose prose-slate mx-6 md:mx-0">
-            Hello, I'm Ethan! Passionate about technology, math, philosophy, nutrition, meditation, fitness, and life;
-            through these pursuits, it's my goal to help make the world a better place. Currently focused on building
-            applications that connect and empower humanity.
-          </p>
+          <div className="prose prose-slate mx-6 md:mx-0">
+            <p className="mb-2">
+              Hi, I’m Ethan! A software developer passionate about the harmony between aesthetics, structure and
+              functionality.
+            </p>
+            <p className="mb-2">
+              To learn is to uncover the unknown. I’ve committed myself to a pursuit of wisdom; questioning everything
+              and trusting no one. It’s only through this process that we begin to individuate and uncover the divine
+              connection of nature.
+            </p>
+            <p className="mb-2">
+              Through my research, I’ve developed a strong appreciation for this relationship between aesthetics and
+              structure. The fractal nature of reality illuminates that one decision ripples through a fabric of all
+              others.
+            </p>
+            <p>
+              I believe it necessary to understand these systems in their entirety. Without high level appreciation,
+              it’s impossible to produce a harmonised system. This applies to biological and digital systems alike.
+            </p>
+          </div>
         </div>
 
         <TechDetails />
