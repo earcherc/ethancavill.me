@@ -18,7 +18,7 @@ export default function SkillsetDetailClient(props: SkillDetailsType) {
   });
 
   return (
-    <animated.div ref={ref} style={skillsetAnimation}>
+    <animated.div ref={ref} style={skillsetAnimation} className="flex h-full">
       <SkillsetDetailRSC {...props} />
     </animated.div>
   );
