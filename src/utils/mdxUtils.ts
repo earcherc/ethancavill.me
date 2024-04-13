@@ -20,14 +20,21 @@ async function getMdxFiles(dir: string): Promise<string[]> {
 export const getPosts = cache(async (): Promise<Post[]> => {
   const filePaths = await getMdxFiles(POSTS_FOLDER);
 
-  return Promise.all(
+  const posts = await Promise.all(
     filePaths.map(async (filePath) => {
       const postContent = await fs.readFile(filePath, 'utf8');
       const { data, content } = matter(postContent);
 
       return { ...data, body: content } as Post;
     }),
-  ).then((posts) => posts.filter((post): post is Post => post !== null));
+  );
+
+  // Sort posts by date in descending order (newest first)
+  posts.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+
+  return posts.filter((post): post is Post => post !== null);
 });
 
 export async function getPost(slug: string): Promise<Post | undefined> {
