@@ -40,8 +40,8 @@ export default function About() {
               others.
             </p>
             <p>
-              I believe it necessary to understand these systems. Without high level appreciation, it’s impossible to
-              produce a harmonised product. This applies to biological and digital systems alike.
+              I believe it is necessary to understand these systems. Without a high level appreciation, it’s impossible
+              to produce a harmonised product. This applies to biological and digital systems alike.
             </p>
           </div>
         </div>

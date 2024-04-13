@@ -26,7 +26,7 @@ const projects: ProjectSlideInterface[] = [
     imageSrc: deepworkImage,
     title: 'Deep Work Timer',
     description:
-      'A project still in development that aims to provide tools for increasing productivity. After reading Deep Work, by Cal Newport, I was disappointed at the array of productivity tools on the market. This inspired an idea to develop my ideal productivity tracker in-line with Newport’s research.',
+      'A project still in development that aims to provide tools for increasing productivity. After reading "Deep Work", by Cal Newport, I was disappointed at the array of productivity tools on the market. This inspired an idea to develop my ideal productivity tracker in line with Newport’s research.',
     technologies: [
       'NextJS',
       'Docker',
@@ -91,7 +91,7 @@ const projects: ProjectSlideInterface[] = [
     imageSrc: devarityImage,
     title: 'Devarity',
     description:
-      'An indie game distributor for developers and gamers. The mission was to support indie developers through a custom platform that provided healthier profit margins and unique customer buying experience. At launch we featured over 50 games from our partners.',
+      'An indie game distributor for developers and gamers. The mission was to support indie developers through a custom platform that provided healthier profit margins and a unique customer buying experience. At launch, we featured over 50 games from our partners.',
     technologies: ['PHP', 'MySQL', 'Python', 'Bootstrap', 'JQuery'],
   },
 ];

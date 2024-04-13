@@ -22,7 +22,7 @@ export default function Skillset() {
       icon: faCode,
       title: 'Development',
       description:
-        'Working in the medical AI industry taught me how to oragnise complex systems and appreciate the demands of staff and clientele alike. Building with industry leading standards and up-to-date technology is what I specialise in.',
+        'Working in the medical AI industry taught me how to organise complex systems and appreciate the demands of staff and clientele alike. Building with industry-leading standards and up-to-date technology is what I specialise in.',
     },
     {
       icon: faMicrochip,
@@ -34,7 +34,7 @@ export default function Skillset() {
       icon: faHandshake,
       title: 'Relationships',
       description:
-        'I believe communication and honesty are the hallmarks of a good relationship. I’m available to chat no matter the time or circumstance. All of our work is shared in real time so you have space to provide ideas and feedback.',
+        'I believe communication and honesty are the hallmarks of a good relationship. I’m available to chat no matter the time or circumstance. All of our work is shared in real-time so you have space to provide ideas and feedback.',
     },
   ];
 
