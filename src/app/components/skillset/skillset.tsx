@@ -16,25 +16,25 @@ export default function Skillset() {
       icon: faDraftingCompass,
       title: 'Design',
       description:
-        'With an education in visual arts, writing, marketing and branding, I’m able to produce a harmonious balance between all dimensions of your business’ image.',
+        'Multidisciplinary background in visual arts, marketing, and branding allows me to create cohesive and impactful visual identities that resonate with your target audience.',
     },
     {
       icon: faCode,
       title: 'Development',
       description:
-        'Working in the medical AI industry taught me how to organise complex systems and appreciate the demands of staff and clientele alike. Building with industry-leading standards and up-to-date technology is what I specialise in.',
+        'Experience in the medical AI industry has honed my ability to architect complex systems that meet the needs of both staff and clients. I specialize in building scalable solutions using industry best practices and cutting-edge technologies.',
     },
     {
       icon: faMicrochip,
       title: 'Technology',
       description:
-        'No matter what dream you have, I will do the research necessary to make it come to life using the most advanced technologies available. The tech industry moves at lightning speed and it’s important to keep your competitive edge.',
+        'Committed to understanding your unique vision and conducting thorough research to leverage the most advanced technologies. By staying aware of the rapidly evolving tech landscape, I ensure your business maintains a competitive advantage.',
     },
     {
       icon: faHandshake,
       title: 'Relationships',
       description:
-        'I believe communication and honesty are the hallmarks of a good relationship. I’m available to chat no matter the time or circumstance. All of our work is shared in real-time so you have space to provide ideas and feedback.',
+        'Prioritizing transparent communication and open dialogue is the foundation of a successful partnership. I am readily available for consultation and provide real-time access to project progress, fostering an environment of collaboration and feedback.',
     },
   ];
 
