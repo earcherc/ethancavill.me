@@ -2,10 +2,9 @@
 
 import { Inter } from 'next/font/google';
 
-import { useEffect, useState } from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
-import { useRouter } from 'next/router';
+
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });

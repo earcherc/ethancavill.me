@@ -8,7 +8,6 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Ethan - Developer and Agency Owner',
   description: 'An experienced developer and agency owner.',
-  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
   openGraph: {
     url: 'https://www.ethancavill.me',

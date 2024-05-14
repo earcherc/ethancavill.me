@@ -51,8 +51,8 @@ export default function Skillset() {
 
         <div className="flex flex-wrap justify-center items-stretch mx-auto -mt-10 sm:-mt-24 md:-mt-40 max-w-screen-xl mb-20">
           {skillDetails.map((detail, index) => (
-            <div className="w-4/5 md:w-2/5 m-2">
-              <SkillsetDetailClient key={index} {...detail} />
+            <div key={index} className="w-4/5 md:w-2/5 m-2">
+              <SkillsetDetailClient {...detail} />
             </div>
           ))}
         </div>

@@ -26,7 +26,7 @@ const projects: ProjectSlideInterface[] = [
     imageSrc: deepworkImage,
     title: 'Deep Work Timer',
     description:
-      'A project still in development that aims to provide tools for increasing productivity. After reading "Deep Work", by Cal Newport, I was disappointed at the array of productivity tools on the market. This inspired an idea to develop my ideal productivity tracker in line with Newport’s research.',
+      "Inspired by Cal Newport's 'Deep Work,' this productivity tool reimagines focus tracking.  Disappointed by existing options, I built a personalized timer aligning with Newport's research. This NextJS application uses Docker, AWS, and a robust backend (Redis, Postgres, GraphQL, etc.) to deliver an optimized deep work experience.",
     technologies: [
       'NextJS',
       'Docker',
@@ -45,7 +45,7 @@ const projects: ProjectSlideInterface[] = [
     imageSrc: vectorsearchImage,
     title: 'Tangible AI Internship',
     description:
-      'The final internship project I produced while working with Hobson at Tangible AI. I built a series of information retrieval (IR) systems to help get better search results from a corpus of health documents. Starting with TF-IDF, I built a processing and evaluation pipeline which was then used to compare results against an alternative BERT vectoriser. The internship and Hobson’s book, "NLP in Action", were greatly illuminating. I’m very grateful to the team at Tangible for being so generous with their time.',
+      "During my internship at Tangible AI, I developed and evaluated various information retrieval (IR) systems to enhance search results within a corpus of health documents. Starting with TF-IDF, I created a pipeline for processing and assessment, then compared results against a BERT-based vectorizer. This project, alongside Hobson Lane's 'NLP in Action,' deepened my understanding of natural language processing.",
     technologies: ['Jupyter', 'Pandas', 'SpaCy', 'NumPy', 'SciKit', 'HuggingFace', 'Joblib', 'PyTorch'],
     viewLink: 'https://github.com/earcherc/vector-search',
   },
@@ -53,7 +53,7 @@ const projects: ProjectSlideInterface[] = [
     imageSrc: radreportImage,
     title: 'RadReport',
     description:
-      'A radiology reporting system that significantly improved accuracy, detail and throughput of Adelaide MRI. Using various forms of data and image analysis, RadReport represented a step forward in radiology.',
+      'RadReport is a radiology reporting system implemented at Adelaide MRI, significantly improving report accuracy, detail, and throughput. By leveraging data and image analysis, RadReport represents a substantial advancement in radiology practices.',
     technologies: [
       'Angular',
       'RxJS',
@@ -75,15 +75,14 @@ const projects: ProjectSlideInterface[] = [
     imageSrc: michellesImage,
     title: 'Harmony Within',
     description:
-      'A health coaching business website that provides valuable information and tools for patient management. This provides the coach with an elegant and professional online presence that increases engagement and conversion of potential clientele.',
+      'This professionally designed website empowers health coaches to effectively manage their practice and attract new clients. The platform provides a comprehensive suite of tools for client engagement, appointment scheduling, and resource sharing, all presented in an elegant interface that fosters trust and credibility.',
     technologies: ['Gatsby', 'Stripe', 'Sanity.io', 'Acuity Scheduler'],
-    viewLink: 'https://michellesportfoliomain.gatsbyjs.io/',
   },
   {
     imageSrc: portfolioImage,
     title: 'Portfolio',
     description:
-      'I designed this portfolio to offer an elegant home for my thoughts, projects and services. It’s also used as a testing ground for code practices, technologies, and design.',
+      'My portfolio website showcases my projects, services, and insights while serving as a dynamic testing ground for innovative code practices, technologies, and design principles.',
     technologies: ['Next', 'Tailwind CSS', 'Framer motion', 'MDX', 'Vercel'],
     viewLink: 'https://ethancavill.me',
   },
@@ -91,7 +90,7 @@ const projects: ProjectSlideInterface[] = [
     imageSrc: devarityImage,
     title: 'Devarity',
     description:
-      'An indie game distributor for developers and gamers. The mission was to support indie developers through a custom platform that provided healthier profit margins and a unique customer buying experience. At launch, we featured over 50 games from our partners.',
+      'This indie game distribution platform champions independent game developers by offering fairer profit margins and a unique customer experience. At launch we featured over 50 games from our partners',
     technologies: ['PHP', 'MySQL', 'Python', 'Bootstrap', 'JQuery'],
   },
 ];

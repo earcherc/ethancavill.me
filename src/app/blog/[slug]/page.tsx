@@ -9,7 +9,6 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: post?.title,
     description: post?.description || 'The latest in AI',
-    viewport: 'width=device-width, initial-scale=1',
     robots: 'index, follow',
     openGraph: {
       url: `https://www.ethancavill.me/blog/${params.slug}`,

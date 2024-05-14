@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   title: "Ethan's Blog - Latest in AI and Development",
   description:
     'Dive into the latest discussions on AI, technology, and software development from Ethan, an experienced developer and agency owner.',
-  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
   openGraph: {
     url: 'https://www.ethancavill.me/blog',
