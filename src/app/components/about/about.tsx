@@ -26,22 +26,14 @@ export default function About() {
 
           <div className="prose prose-slate mx-6 md:mx-0">
             <p className="mb-2">
-              Hi, I’m Ethan! A software developer passionate about the harmony between aesthetics, structure and
-              functionality.
+              Hi, I’m Ethan! I'm a software developer passionate about blending aesthetics, structure, and functionality
+              in my work. My dedication to continuous learning and curiosity drives me to uncover the connections and
+              patterns in both nature and technology.
             </p>
             <p className="mb-2">
-              To learn is to uncover the unknown. I’ve committed myself to a pursuit of wisdom; questioning everything
-              and trusting no one. It’s only through this process that we begin to experience the divine connections in
-              nature.
-            </p>
-            <p className="mb-2">
-              Through my research, I’ve developed a strong appreciation for this relationship between aesthetics and
-              structure. The fractal nature of reality illuminates that one decision ripples through a fabric of all
-              others.
-            </p>
-            <p>
-              I believe it is necessary to understand these systems. Without a high level appreciation, it’s impossible
-              to produce a harmonised product. This applies to biological and digital systems alike.
+              Through my research and experience, I've gained a deep appreciation for how decisions impact entire
+              systems. This understanding emphasizes the importance of integrating aesthetics and structure to create
+              harmonious and efficient solutions.
             </p>
           </div>
         </div>
