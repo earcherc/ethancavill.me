@@ -1,10 +1,11 @@
 'use client';
 
 import { faGithub, faLinkedin, faDiscord, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from 'react-spring';
+import { Tooltip } from 'react-tooltip';
 
 export default function Socials() {
   const [ref, inView] = useInView({
@@ -21,6 +22,8 @@ export default function Socials() {
     <animated.div ref={ref} style={iconsAnimation} className="flex justify-center">
       <ul className="flex space-x-12">
         <a
+          data-tooltip-id="my-tooltip"
+          data-tooltip-content="LinkedIn"
           className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600"
           target="_blank"
           rel="noreferrer noopener"
@@ -29,7 +32,9 @@ export default function Socials() {
           <FontAwesomeIcon size="2x" icon={faLinkedin} />
         </a>
         <a
-          className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600 "
+          data-tooltip-id="my-tooltip"
+          data-tooltip-content="Email"
+          className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600"
           target="_blank"
           rel="noreferrer noopener"
           href="mailto: ethancavill@gmail.com"
@@ -37,6 +42,8 @@ export default function Socials() {
           <FontAwesomeIcon size="2x" icon={faEnvelope} />
         </a>
         <a
+          data-tooltip-id="my-tooltip"
+          data-tooltip-content="GitHub"
           className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600"
           target="_blank"
           rel="noreferrer noopener"
@@ -45,6 +52,8 @@ export default function Socials() {
           <FontAwesomeIcon size="2x" icon={faGithub} />
         </a>
         <a
+          data-tooltip-id="my-tooltip"
+          data-tooltip-content="Discord"
           className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600"
           target="_blank"
           rel="noreferrer noopener"
@@ -53,6 +62,8 @@ export default function Socials() {
           <FontAwesomeIcon size="2x" icon={faDiscord} />
         </a>
         <a
+          data-tooltip-id="my-tooltip"
+          data-tooltip-content="Twitter"
           className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600"
           target="_blank"
           rel="noreferrer noopener"
@@ -60,7 +71,17 @@ export default function Socials() {
         >
           <FontAwesomeIcon size="2x" icon={faTwitter} />
         </a>
+        <a
+          data-tooltip-id="my-tooltip"
+          data-tooltip-content="Download Resume"
+          className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600"
+          href="/public/resume/ethan_cv_6_24.pdf"
+          download="Ethan-Cavill-Resume.pdf"
+        >
+          <FontAwesomeIcon size="2x" icon={faFilePdf} />
+        </a>
       </ul>
+      <Tooltip id="my-tooltip" delayShow={300} />
     </animated.div>
   );
 }
