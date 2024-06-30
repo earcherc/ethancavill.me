@@ -2,10 +2,12 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ArrowUpCircleIcon } from '@heroicons/react/20/solid';
 import { scrollToElement } from '../../utils/scrollTo';
+import packageJson from '../../../package.json';
 import React from 'react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const version = packageJson.version;
 
   return (
     <div className="flex items-center mx-auto justify-center z-[-10] footer-shape bg-gray-300">
@@ -26,7 +28,17 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="font-bold text-xs text-white mb-4">Ethan Cavill © {currentYear}</div>
+        <div className="font-bold text-xs text-white mb-4">
+          Ethan Cavill © {currentYear} -{' '}
+          <a
+            href="https://github.com/earcherc/ethancavill.me"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="hover:underline"
+          >
+            Version {version}
+          </a>
+        </div>
 
         <button onClick={() => scrollToElement('#home')} className="cursor-pointer">
           <ArrowUpCircleIcon className="h-10 w-10 text-white hover:text-gray-100" />
