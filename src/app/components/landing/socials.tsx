@@ -75,8 +75,8 @@ export default function Socials() {
           data-tooltip-id="my-tooltip"
           data-tooltip-content="Download Resume"
           className="transform transition duration-150 ease-in-out hover:-translate-y-0.5 hover:scale-110 text-gray-500 hover:text-gray-600"
-          href="/public/resume/ethan_cv_6_24.pdf"
-          download="ethan_cavill_6_24.pdf"
+          href="/resume/ethan_cv.pdf"
+          download="ethan_cavill_cv.pdf"
         >
           <FontAwesomeIcon size="2x" icon={faFilePdf} />
         </a>
