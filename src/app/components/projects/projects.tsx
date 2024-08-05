@@ -39,7 +39,7 @@ const projects: ProjectSlideInterface[] = [
       'FastAPI',
       'SQLModel',
     ],
-    viewLink: 'https://github.com/earcherc/deep-work',
+    viewLink: 'https://deepworktimer.io/',
   },
   {
     imageSrc: vectorsearchImage,
