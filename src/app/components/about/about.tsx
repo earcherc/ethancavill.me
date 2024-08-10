@@ -30,10 +30,6 @@ export default function About() {
               and life. I bring a diverse skill set and a strong foundation in mathematics, natural language processing
               (NLP), machine learning, and medical software.
             </p>
-            <p className="mb-2">
-              Through my research and experience, I've gained a deep understanding of the structural complexity of both
-              digital and biological systems alike.
-            </p>
           </div>
         </div>
 
