@@ -26,19 +26,8 @@ const projects: ProjectSlideInterface[] = [
     imageSrc: deepworkImage,
     title: 'Deep Work Timer',
     description:
-      "Inspired by Cal Newport's 'Deep Work,' this productivity tool reimagines focus tracking.  Disappointed by existing options, I built a personalized timer aligning with Newport's research. This NextJS application uses Docker, AWS, and a robust backend (Redis, Postgres, GraphQL, etc.) to deliver an optimized deep work experience.",
-    technologies: [
-      'NextJS',
-      'Docker',
-      'AWS',
-      'Redis',
-      'Postgres',
-      'Jotai',
-      'GraphQL',
-      'Strawberry',
-      'FastAPI',
-      'SQLModel',
-    ],
+      "Inspired by Cal Newport's 'Deep Work,' this productivity tool reimagines focus tracking.  Disappointed by existing options, I built a personalized timer aligning with Newport's research. This NextJS application uses Docker, AWS, and a robust backend (Redis, Postgres, FastAPI) to deliver an optimized deep work experience.",
+    technologies: ['NextJS', 'Tailwind', 'React Query', 'FastAPI', 'Postgres', 'SQLAlchemy', 'Redis', 'Docker', 'AWS'],
     viewLink: 'https://deepworktimer.io/',
   },
   {
