@@ -34,7 +34,7 @@ const projects: ProjectSlideInterface[] = [
     imageSrc: vectorsearchImage,
     title: 'Tangible AI',
     description:
-      "During my internship at Tangible AI, I developed and evaluated various information retrieval (IR) systems to enhance search results within a corpus of health documents. Starting with TF-IDF, I created a pipeline for processing and assessment, then compared results against a BERT-based vectorizer. This project, alongside Hobson Lane's 'NLP in Action,' deepened my understanding of natural language processing.",
+      "During my time at Tangible AI, I developed and evaluated various information retrieval (IR) systems to enhance search results within a corpus of health documents. Starting with TF-IDF, I created a pipeline for processing and assessment, then compared results against a BERT-based vectorizer. This project, alongside Hobson Lane's 'NLP in Action,' deepened my understanding of natural language processing.",
     technologies: ['Jupyter', 'Pandas', 'SpaCy', 'NumPy', 'SciKit', 'HuggingFace', 'Joblib', 'PyTorch'],
     viewLink: 'https://github.com/earcherc/vector-search',
   },
