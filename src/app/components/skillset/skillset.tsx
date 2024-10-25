@@ -44,7 +44,7 @@ export default function Skillset() {
         <div className="mx-auto w-4/5 min-h-[20rem] md:h-[24rem] rounded-t-xl p-10 bg-gray-100 mt-10">
           <h2 className="font-bold text-4xl text-center mb-8 text-slate-800">Creative Developer</h2>
           <p className="text-center prose prose-slate mx-auto mb-6">
-            I specialise in the the marriage of design and technology, seeking to captivate and engage by providing
+            I specialise in the marriage of design and technology, seeking to captivate and engage by providing
             industry leading user experiences.
           </p>
         </div>
