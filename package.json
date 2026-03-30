@@ -2,9 +2,6 @@
   "name": "portfolio",
   "version": "0.1.1",
   "private": true,
-  "engines": {
-    "node": ">=20.x"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -27,7 +24,7 @@
     "gray-matter": "^4.0.3",
     "mdx-bundler": "^10.0.1",
     "next": "14.1.3",
-    "next-mdx-remote": "^4.4.1",
+    "next-mdx-remote": "^6.0.0",
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.8.1",
@@ -43,11 +40,14 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-scrollspy": "^3.3.9",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.3",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.37.5",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-sort-imports": "^1.8.3",
